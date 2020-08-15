@@ -1,0 +1,48 @@
+.title {
+  margin-right: 4rem;
+  color: #ffffff;
+  width: 56rem;
+  h1 {
+    font-size: 4.4rem;
+    width: 38rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  ul {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: darken(#ffffff, 5%);
+    @media (max-width: 1340px) {
+      li {
+        display: inline;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    width: auto;
+    margin: 0;
+    text-align: center;
+    padding: 8rem 0 4rem;
+    h1 {
+      width: auto;
+      font-size: 3.4rem;
+    }
+    ul {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @media (max-width: 319px) {
+    h1 {
+      font-size: 2rem;
+    }
+    ul {
+      font-size: 1.2rem;
+    }
+  }
+}

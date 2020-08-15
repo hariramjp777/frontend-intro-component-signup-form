@@ -45,6 +45,8 @@
               id="first-name"
               class="name"
               placeholder="First Name"
+              autocomplete="off"
+              spellcheck="false"
             />
           </label>
           <label for="last-name">
@@ -53,22 +55,42 @@
               id="last-name"
               class="name"
               placeholder="Last Name"
+              autocomplete="off"
+              spellcheck="false"
             />
           </label>
           <label for="email">
-            <input type="email" id="email" placeholder="Email Address" />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              autocomplete="off"
+              spellcheck="false"
+            />
           </label>
           <label for="password">
-            <input type="password" id="password" placeholder="Password" />
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              autocomplete="off"
+              spellcheck="false"
+            />
           </label>
-          <button class="cta">claim your free trial</button>
+          <button class="cta" type="submit">claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
         </form>
-        <p>
-          By clicking the button, you are agreeing to our
-          <a href="#">Terms and Services</a>
-        </p>
       </div>
     </main>
+    <div class="modal">
+      <div class="inner">
+        <p>Congratulations</p>
+        <p>You've taken the right step</p>
+      </div>
+    </div>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
