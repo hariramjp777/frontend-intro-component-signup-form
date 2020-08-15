@@ -1,0 +1,35 @@
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 100%;
+  a {
+    color: color(link);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:nth-child(1) {
+      border-right: 0.1rem solid;
+      padding-right: 1rem;
+    }
+    &:nth-child(2) {
+      padding-left: 1rem;
+    }
+  }
+  @media (max-width: 991px) {
+    position: static;
+    margin: 1rem 0;
+  }
+  @media (max-height: 785px) {
+    &.move {
+      position: static;
+      margin: 1rem 0;
+    }
+  }
+  @media (max-height: 663px) {
+    position: static;
+    margin: 1rem 0;
+  }
+}

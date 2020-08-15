@@ -73,7 +73,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 79%;
-  height: inherit;
+  min-height: 100%;
   margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -478,5 +478,52 @@ main {
 .modal.view .inner {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.attribution a {
+  color: #171819;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+.attribution a:nth-child(1) {
+  border-right: 0.1rem solid;
+  padding-right: 1rem;
+}
+
+.attribution a:nth-child(2) {
+  padding-left: 1rem;
+}
+
+@media (max-width: 991px) {
+  .attribution {
+    position: static;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-height: 785px) {
+  .attribution.move {
+    position: static;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-height: 663px) {
+  .attribution {
+    position: static;
+    margin: 1rem 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

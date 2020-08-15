@@ -30,21 +30,25 @@ const validate = (input) => {
   const parent = document.querySelector(`label[for=${input.id}]`);
   const span = parent.querySelector("span");
   const mains = document.querySelector("main");
+  const attribution = document.querySelector(".attribution");
   const minimum = { text: 1, password: 8 };
   if (input.type === "email" && input.validity.valid && len >= 1) {
     if (span) removeSpan(parent, span);
     parent.classList.remove("invalid");
     mains.classList.remove("expand");
+    attribution.classList.remove("move");
     return true;
   }
   if (len >= minimum[input.type]) {
     if (span) removeSpan(parent, span);
     parent.classList.remove("invalid");
     mains.classList.remove("expand");
+    attribution.classList.remove("move");
     return true;
   }
   parent.classList.add("invalid");
   mains.classList.add("expand");
+  attribution.classList.add("move");
   createSpan(parent, span);
 };
 
