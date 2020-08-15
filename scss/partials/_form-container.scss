@@ -1,38 +1,27 @@
 .form-container {
   width: 60rem;
-  .try-it {
-    padding: 2rem 0;
-    width: 100%;
+  button.try-it {
     background-color: color(blue);
-    border: 0;
-    border-radius: 0.8rem;
     display: flex;
     justify-content: center;
-    cursor: pointer;
     align-items: center;
-    font-size: 1.6rem;
-    outline: 0;
-    box-shadow: 0 0.8rem 0.2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.8rem 0.2rem color(lightBlack);
     span:first-child {
       font-weight: 600;
-      color: #ffffff;
+      color: color(white);
       margin-right: 0.8rem;
     }
     span:last-child {
-      color: darken(#ffffff, 10%);
-      font-weight: 400;
-    }
-    &:active {
-      transform: scale(0.95);
+      color: darken(color(white), 10%);
     }
   }
   form {
     width: 100%;
     margin: 2rem 0 0;
-    background-color: #ffffff;
-    padding: 4rem 4rem;
+    background-color: color(white);
+    padding: 4rem;
     border-radius: 0.8rem;
-    box-shadow: 0 0.8rem 0.2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.8rem 0.2rem color(lightBlack);
     label {
       margin-bottom: 2rem;
       display: block;
@@ -89,22 +78,11 @@
         text-transform: capitalize;
       }
     }
-    button {
-      padding: 2rem 0;
-      width: 100%;
+    button.cta {
       text-transform: uppercase;
       background-color: color(green);
-      border: 0;
-      border-radius: 0.8rem;
-      font-size: 1.6rem;
-      color: #ffffff;
-      font-weight: 400;
-      outline: 0;
-      cursor: pointer;
+      color: color(white);
       box-shadow: 0 0.5rem 0.2rem lighten(color(green), 10%);
-      &:active {
-        transform: scale(0.95);
-      }
     }
     p {
       font-size: 1.2rem;
@@ -149,6 +127,12 @@
     }
     form button {
       font-size: 1rem;
+    }
+  }
+  @media (max-width: 260px) {
+    form input {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 }

@@ -52,6 +52,22 @@ body {
   }
 }
 
+button {
+  padding: 2rem 0;
+  width: 100%;
+  border: 0;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  outline: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,13 +109,13 @@ main {
 
 .title {
   margin-right: 4rem;
-  color: #ffffff;
   width: 56rem;
 }
 
 .title h1 {
   font-size: 4.4rem;
   width: 38rem;
+  color: #ffffff;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -152,49 +168,36 @@ main {
   width: 60rem;
 }
 
-.form-container .try-it {
-  padding: 2rem 0;
-  width: 100%;
+.form-container button.try-it {
   background-color: #6055a5;
-  border: 0;
-  border-radius: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.6rem;
-  outline: 0;
   -webkit-box-shadow: 0 0.8rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.8rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
-.form-container .try-it span:first-child {
+.form-container button.try-it span:first-child {
   font-weight: 600;
   color: #ffffff;
   margin-right: 0.8rem;
 }
 
-.form-container .try-it span:last-child {
+.form-container button.try-it span:last-child {
   color: #e6e6e6;
-  font-weight: 400;
-}
-
-.form-container .try-it:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
 }
 
 .form-container form {
   width: 100%;
   margin: 2rem 0 0;
   background-color: #ffffff;
-  padding: 4rem 4rem;
+  padding: 4rem;
   border-radius: 0.8rem;
   -webkit-box-shadow: 0 0.8rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.8rem 0.2rem rgba(0, 0, 0, 0.2);
@@ -284,25 +287,12 @@ main {
   text-transform: capitalize;
 }
 
-.form-container form button {
-  padding: 2rem 0;
-  width: 100%;
+.form-container form button.cta {
   text-transform: uppercase;
   background-color: #38cc8c;
-  border: 0;
-  border-radius: 0.8rem;
-  font-size: 1.6rem;
   color: #ffffff;
-  font-weight: 400;
-  outline: 0;
-  cursor: pointer;
   -webkit-box-shadow: 0 0.5rem 0.2rem #61d6a3;
           box-shadow: 0 0.5rem 0.2rem #61d6a3;
-}
-
-.form-container form button:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
 }
 
 .form-container form p {
@@ -366,6 +356,13 @@ main {
   }
   .form-container form button {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 260px) {
+  .form-container form input {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

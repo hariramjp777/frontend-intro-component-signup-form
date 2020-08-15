@@ -1,0 +1,25 @@
+body {
+  background-color: color(red);
+  background-image: url("../assets/images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right;
+  @media (max-width: 500px) {
+    background-image: url("../assets/images/bg-intro-mobile.png");
+    background-position: top;
+  }
+}
+
+button {
+  padding: 2rem 0;
+  width: 100%;
+  border: 0;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  outline: 0;
+  font-weight: 400;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.95);
+  }
+}

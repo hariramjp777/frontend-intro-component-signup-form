@@ -1,10 +1,10 @@
 .title {
   margin-right: 4rem;
-  color: #ffffff;
   width: 56rem;
   h1 {
     font-size: 4.4rem;
     width: 38rem;
+    color: color(white);
     font-weight: 700;
     line-height: 1.2;
   }
@@ -12,7 +12,7 @@
     margin: 2rem 0;
     font-size: 1.6rem;
     font-weight: 400;
-    color: darken(#ffffff, 5%);
+    color: darken(color(white), 5%);
     @media (max-width: 1340px) {
       li {
         display: inline;

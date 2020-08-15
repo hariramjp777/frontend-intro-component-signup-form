@@ -122,6 +122,8 @@ const main = () => {
   modal.addEventListener("click", (e) => {
     if (e.target.className === "modal view") modal.classList.remove("view");
     form.reset();
+    button.removeAttribute("disabled");
+    button.textContent = "Claim your free trial";
   });
 };
 
