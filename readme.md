@@ -27,8 +27,8 @@
 <!-- HTML content -->
 
 <p align="center">Hari Ram J P</p>
-<p align="center"><a href="https://github.com/hariramjp777/frontend-intro-component-signup-form/" title="GitHub Profile"><img src="./assets/images/github-icon.png" width="25"></a><a href="https://www.frontendmentor.io/profile/hariramjp777" title="Frontend Mentor Profile">&nbsp;&nbsp;<img src="./assets/images/favicon-32x32.png" style="width: 25px;" width="25"></a></p>
+<p align="center"><a href="https://github.com/hariramjp777/" title="GitHub Profile"><img src="./assets/images/github-icon.png" width="25"></a><a href="https://www.frontendmentor.io/profile/hariramjp777" title="Frontend Mentor Profile">&nbsp;&nbsp;<img src="./assets/images/favicon-32x32.png" style="width: 25px;" width="25"></a></p>
 
-[link]: https://hariramjp777.github.io/ "Live Site"
+[link]: https://hariramjp777.github.io/frontend-intro-component-signup-form/ "Live Site"
 [at1440px]: ./assets/designs/at1440px.png "At 1440px"
 [activestates]: ./assets/designs/activestates.png "Active States"
