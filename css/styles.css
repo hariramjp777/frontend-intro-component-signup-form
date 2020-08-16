@@ -526,4 +526,12 @@ main {
     margin: 1rem 0;
   }
 }
+
+@media (max-width: 319px) {
+  .attribution a {
+    display: block;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
