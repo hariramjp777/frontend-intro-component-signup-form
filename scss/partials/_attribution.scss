@@ -20,17 +20,17 @@
   }
   @media (max-width: 991px) {
     position: static;
-    margin: 1rem 0;
+    padding: 1rem 0;
   }
   @media (max-height: 785px) {
     &.move {
       position: static;
-      margin: 1rem 0;
+      padding: 1rem 0;
     }
   }
   @media (max-height: 663px) {
     position: static;
-    margin: 1rem 0;
+    padding: 1rem 0;
   }
   @media (max-width: 319px) {
     a {
